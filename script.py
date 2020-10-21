@@ -1,4 +1,4 @@
-Ejercicio biopython
+#Ejercicio biopython
 from Bio import SeqIO
 from Bio.SeqFeature import FeatureLocation, SecFeature
 from Bio.SeqRecord import SeqRecord
