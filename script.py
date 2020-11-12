@@ -21,11 +21,22 @@ def summarize_contents(filename):
 
 from Bio.Seq import Seq
 
-list_of_seqs = [Seq("acgtcgggtatacggcatgacgta"), Seq("gctgcagcagcattattacgcgcg")]
-def concatenate_and_get_reverse_of_complement():                                                       
+def concatenate_and_get_reverse_of_complement(self):                                                       
+    
     concatenated = Seq("")
     for s in list_of_seqs():
         concatenated += s
     concatenated
-    concatenated = my_seq
+    my_seq = concatenated
     print(my_seq.reverse_complement())
+
+def print_protein_and_stop_codon_using_standard_table(Diccionario{dnaseq, messenger_rna, prot}):
+
+    messenger_rna = coding_dna.transcribe()
+    messenger_rna
+
+    prot = messenger_rna.translate()
+
+    
+    
+
