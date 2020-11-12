@@ -30,12 +30,48 @@ def concatenate_and_get_reverse_of_complement(self):
     my_seq = concatenated
     print(my_seq.reverse_complement())
 
-def print_protein_and_stop_codon_using_standard_table(Diccionario{dnaseq, messenger_rna, prot}):
+def print_protein_and_stop_codon_using_standard_table(Diccionario{dnaseq, messenger_rna, prot, }):
 
     messenger_rna = coding_dna.transcribe()
     messenger_rna
 
     prot = messenger_rna.translate()
+
+    for codon in range (0, len(seq), 3):
+        if('taa' in Seq[codon:codon + 3]) 
+            break
+        
+        if('tag' in Seq[codon:codon + 3]) 
+            break
+        
+        if('tga' in Seq[codon:codon + 3]) 
+            break
+
+    if stop == True:
+        print ("Existe al menos 1 codón de paro en la secuencia")
+    
+    if stop == False:
+        print ("No existen codones de paro en la secuencia")
+
+def print_proteins_and_codons_using_mitocondrial_yeast_table(Diccionario{dnaseq, messenger_rna, prot, }):
+
+    messenger_rna = coding_dna.transcribe()
+    messenger_rna
+
+    prot = messenger_rna.translate(table = 3)
+
+    for codon in range (0, len(seq), 3):
+        if('taa' in Seq[codon:codon + 3]) 
+            print ("Existe al menos 1 codón de paro en la secuencia")
+            break
+        
+        if('tag' in Seq[codon:codon + 3]) 
+            print ("Existe al menos 1 codón de paro en la secuencia")
+            break
+        
+    if stop == False:
+        print ("No existen codones de paro en la secuencia")
+
 
     
     

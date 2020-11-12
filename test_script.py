@@ -41,7 +41,7 @@ class miPrueba(unittest.TestCase):
     self.assertEqual("gcatggtgaaagcctagcttagcc", dnaseq)
 
 
-  def test_print_protein_and_stop_codon_using_standard_table(dnaseq):
+  def test_print_protein_and_stop_codon_using_standard_table(Diccionario{dnaseq, messenger_rna, prot, }):
 
     dnaseq = Seq("acgtcgggtatacggcatgacgta")
     self.print_protein_and_stop_codon_using_standard_table(dnaseq)
@@ -58,5 +58,21 @@ class miPrueba(unittest.TestCase):
     dnaseq = Seq("gcacgtacgatgcatctgatcact")
     self.print_protein_and_stop_codon_using_standard_table(dnaseq)
 
+  def test_proteins_and_codons_using_mitocondrial_yeast_table(Diccionario{dnaseq, messenger_rna, prot, }):
 
+
+    dnaseq = Seq("acgtcgggtatacggcatgacgta")
+    self.print_protein_and_stop_codon_using_standard_table(dnaseq)
+
+    dnaseq = Seq("gctgcagcagcattattacgcgcg")
+    self.print_protein_and_stop_codon_using_standard_table(dnaseq)
+
+    dnaseq = Seq("gcatggtgaaagcctagcttagcc")
+    self.print_protein_and_stop_codon_using_standard_table(dnaseq)
+
+    dnaseq = Seq("cgatcgcctacgattacggaaagc")
+    self.print_protein_and_stop_codon_using_standard_table(dnaseq)
+
+    dnaseq = Seq("gcacgtacgatgcatctgatcact")
+    self.print_protein_and_stop_codon_using_standard_table(dnaseq)
     
